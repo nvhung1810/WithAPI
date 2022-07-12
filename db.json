@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Iphone 6S Plus",
+      "price": "4500000",
+      "description": "Điện thoại di động",
+      "address": "China"
+    },
+    {
+      "id": 2,
+      "name": "Iphone 7 Plus",
+      "price": "5500000",
+      "description": "Điện thoại di động",
+      "address": "China"
+    },
+    {
+      "id": 3,
+      "name": "Iphone 8 Plus",
+      "price": "6500000",
+      "description": "Điện thoại di động",
+      "address": "China"
+    },
+    {
+      "id": 4,
+      "name": "Iphone XS",
+      "price": "9500000",
+      "description": "Điện thoại di động",
+      "address": "China"
+    }
+  ]
+}

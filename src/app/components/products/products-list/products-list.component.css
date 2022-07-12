@@ -1,0 +1,14 @@
+.btn-color {
+    background-color: #04A1A2;
+    color: #fff;
+}
+
+.wrap {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.td-action {
+    display: block;
+    width: 180px
+}

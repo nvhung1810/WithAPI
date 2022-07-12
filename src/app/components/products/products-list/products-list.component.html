@@ -1,0 +1,32 @@
+<div class="wrap">
+    <button type="button" class="btn btn-color" data-toggle="button" aria-pressed="false" 
+    autocomplete="off" [style.margin-bottom.px] ="20"
+    [routerLink]="['/products/add']"
+    >CREATE</button>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Discription</th>
+                <th>Address</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of _products; let i = index">
+                <td>{{i + 1}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.description}}</td>
+                <td>{{item.price > 0 ? (item.price | currency: 'USD': true) : 'FREE' }}</td>
+                <td>{{item.address}}</td>
+                <td>
+                    <button type="button" class="btn btn-primary" [style.margin-right.px]="20" [routerLink]="['/products', item.id, 'edit']">EDIT</button>
+                    <button type="button" class="btn btn-danger" (click)="OnDelete(item.id)">DELETE</button>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>

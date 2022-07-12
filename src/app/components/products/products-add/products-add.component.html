@@ -1,0 +1,33 @@
+<div class="form-group">
+  <label for="">CREATE NEW PRODUCT</label>
+  <!-- Name -->
+  <input type="text"
+    class="form-control" name="" id="" aria-describedby="helpId" placeholder=""
+    [(ngModel)]="product.name" ngDefaultControl [ngModelOptions]="{standalone: true}" 
+  >
+  <small id="helpId" class="form-text text-muted" [style.margin-bottom.px]="20">Enter New Name Product</small>
+  <!-- Price -->
+  <input type="text"
+    class="form-control" name="" id="" aria-describedby="helpId" placeholder=""
+    [(ngModel)]="product.price" ngDefaultControl [ngModelOptions]="{standalone: true}" 
+  >
+  <small id="helpId" class="form-text text-muted" [style.margin-bottom.px]="20"
+   >Enter New Price Of Product</small>
+  <!-- Description -->
+  <input type="text"
+    class="form-control" name="" id="" aria-describedby="helpId" placeholder=""
+    [(ngModel)]="product.description" ngDefaultControl [ngModelOptions]="{standalone: true}" 
+  >
+  <small id="helpId" class="form-text text-muted" [style.margin-bottom.px]="20"
+  >Enter New Discription Of Product</small>
+  <!-- Address -->
+  <input type="text"
+    class="form-control" name="" id="" aria-describedby="helpId" placeholder=""
+    [(ngModel)]="product.address" ngDefaultControl [ngModelOptions]="{standalone: true}" 
+  >
+  <small id="helpId" class="form-text text-muted" [style.margin-bottom.px]="20"
+   >Enter New Address Of Product</small>
+</div>
+
+<button type="button" class="btn btn-primary btn-save" data-toggle="button" aria-pressed="false" autocomplete="off"
+(click)="onCreateProduct()">SAVE</button>
